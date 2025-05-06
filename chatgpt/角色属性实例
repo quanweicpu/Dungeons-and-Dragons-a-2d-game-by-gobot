@@ -1,0 +1,27 @@
+public class Character : Node
+{
+    public string Name { get; set; }
+    public int Health { get; set; }
+    public int Mana { get; set; }
+    public Dictionary<string, int> Attributes { get; set; }
+
+    public Character(string name)
+    {
+        Name = name;
+        Health = 100;
+        Mana = 50;
+        Attributes = new Dictionary<string, int> 
+        {
+            { "Strength", 10 },
+            { "Dexterity", 10 },
+            { "Intelligence", 10 }
+        };
+    }
+
+    public void LevelUp()
+    {
+        Health += 10;
+        Mana += 5;
+        Attributes["Strength"] += 2;
+    }
+}

@@ -1,0 +1,10 @@
+public void SyncPosition(Vector2 newPos)
+{
+    Rpc("UpdatePosition", newPos);  // 通过RPC同步玩家位置
+}
+
+[Remote]
+public void UpdatePosition(Vector2 newPos)
+{
+    position = newPos;  // 更新本地玩家位置
+}

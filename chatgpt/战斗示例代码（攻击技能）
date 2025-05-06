@@ -1,0 +1,29 @@
+public class Character : Node
+{
+    // 角色的属性和方法
+
+    public void Attack(Enemy target)
+    {
+        int damage = Attributes["Strength"] * 2; // 假设攻击力是力量的两倍
+        target.TakeDamage(damage);
+    }
+}
+
+public class Enemy : Node
+{
+    public int Health { get; set; }
+
+    public void TakeDamage(int damage)
+    {
+        Health -= damage;
+        if (Health <= 0)
+        {
+            Die();
+        }
+    }
+
+    private void Die()
+    {
+        // 处理敌人死亡
+    }
+}
