@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://dj4sgjqanlmrj"]
+
+[ext_resource type="Texture2D" uid="uid://ce1x8ki8syjwq" path="res://Dragonborn.png" id="1_nsijr"]
+[ext_resource type="Script" uid="uid://depbu7vwk7vtk" path="res://scripts/Dragonborn.cs" id="2_m0gy7"]
+[ext_resource type="Texture2D" uid="uid://bydsgaouowkyk" path="res://orc.png" id="3_fgw0l"]
+[ext_resource type="Texture2D" uid="uid://dpi6wgc8opqv6" path="res://Demon.png" id="4_hacg7"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Dragonborn" type="Sprite2D" parent="."]
+position = Vector2(588, 766)
+scale = Vector2(0.856934, 0.812753)
+texture = ExtResource("1_nsijr")
+script = ExtResource("2_m0gy7")
+
+[node name="Orc" type="Sprite2D" parent="."]
+position = Vector2(1682, 1579)
+scale = Vector2(1.10547, 1.10547)
+texture = ExtResource("3_fgw0l")
+
+[node name="DemonicDescent" type="Sprite2D" parent="."]
+position = Vector2(912, 1499)
+scale = Vector2(1.34375, 1.30602)
+texture = ExtResource("4_hacg7")

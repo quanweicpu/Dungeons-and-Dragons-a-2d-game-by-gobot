@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://1i5j6sfc6y2f"]
+
+[ext_resource type="Texture2D" uid="uid://cxqjseehpnllx" path="res://a.jpeg" id="1_s60rp"]
+
+[node name="Game0" type="Node2D"]
+
+[node name="A" type="Sprite2D" parent="."]
+position = Vector2(851, 603)
+scale = Vector2(1.63137, 1.63137)
+texture = ExtResource("1_s60rp")
